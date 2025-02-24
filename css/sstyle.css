@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Prompt", sans-serif;
+}
+
+/* General Styles */
+.hm {
+    background-image: url(../imgs/home.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Navbar */
+.hm .navbar {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1000;
+}
+
+.hm .navbar .logo img {
+    width: 100px; /* Adjusted for responsiveness */
+    height: auto;
+}
+
+.hm .navbar .links {
+    display: flex;
+    gap: 15px;
+    font-size: 18px;
+}
+
+.hm .navbar .links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+.hm .navbar .links a:hover {
+    color: red;
+}
+
+/* Hero Section */
+.hm .mod {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hm .mod h1 {
+    color: white;
+    font-size: 3rem; /* Responsive font size */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hm .mod p {
+    color: white;
+    font-size: 1.2rem; /* Responsive font size */
+    font-weight: lighter;
+    margin-bottom: 30px;
+    max-width: 800px;
+}
+
+.hm .mod a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+    padding: 10px 20px;
+    background-color: white;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.hm .mod a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Gallery Section */
+.pics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin: 100px 0;
+}
+
+.pics .item {
+    width: calc(33.33% - 80px); /* 3 columns by default */
+    max-width: 100%;
+    height: auto; /* Let the height adjust based on content */
+    text-align: center;
+    margin-bottom: 25px; /* Space between items */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* overflow: hidden; */
+}
+
+.pics .item img {
+    width: 100%;
+    height: 300px; /* Fixed height for images */
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+    transition: 0.5s ease-in-out;
+}
+
+.pics .item img:hover {
+    transform: scale(1.07); /* Scale the image on hover */
+}
+
+.pics .item h1 {
+    font-size: 1.5rem;
+    margin: 25px 5 10px; /* Spacing around the heading */
+}
+
+.pics .item a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    transition: 0.3s ease-in-out;
+}
+
+.pics .item a:hover {
+    color: red;
+}
+
+/* Footer */
+.cp {
+    height: 60px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cp p {
+    color: white;
+    font-size: 1rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .pics .item {
+        width: calc(50% - 20px); /* 2 columns for tablets */
+    }
+
+    .hm .mod h1 {
+        font-size: 2.5rem;
+    }
+
+    .hm .mod p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hm .navbar .links {
+        font-size: 16px;
+    }
+
+    .hm .mod h1 {
+        font-size: 2rem;
+    }
+
+    .hm .mod p {
+        font-size: 0.9rem;
+    }
+
+    .pics .item {
+        width: calc(100% - 20px); /* 1 column for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .hm .navbar .logo img {
+        width: 80px;
+    }
+
+    .hm .navbar .links {
+        gap: 10px;
+    }
+
+    .hm .mod h1 {
+        font-size: 1.8rem;
+    }
+
+    .hm .mod p {
+        font-size: 0.8rem;
+    }
+
+    .hm .mod a {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
