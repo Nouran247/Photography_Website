@@ -4,6 +4,12 @@ A modern and responsive photography portfolio website built with **HTML** and **
 
 ---
 
+## Live Demo 🌐
+
+Check out the live demo of the project: [[Photography Website Live Demo](https://nouran247.github.io/Photography_Website/)](#) 
+
+---
+
 ## Features ✨
 
 - **Responsive Design**: Works flawlessly on desktops, tablets, and mobile devices.
@@ -20,18 +26,3 @@ A modern and responsive photography portfolio website built with **HTML** and **
 - **Font Awesome**: For icons.
 - **Google Fonts**: For typography.
 
----
-
-## Live Demo 🌐
-
-Check out the live demo of the project: [[Photography Website Live Demo](https://nouran247.github.io/Photography_Website/)](#) <!-- Add your live demo link here -->
-
----
-
-## Installation 🚀
-
-To run this project locally, follow these steps:
-
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/Nouran247/Photography_Website.git
